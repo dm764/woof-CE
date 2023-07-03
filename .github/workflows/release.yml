@@ -50,6 +50,8 @@ on:
         default: 'ubuntu-22.04'
 
 jobs:
+  permissions:
+    contents: write
   build:
     uses: ./.github/workflows/build.yml
     with:
